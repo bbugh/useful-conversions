@@ -12,6 +12,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
+    "format:data": "yq -i -P -o json \"to_entries | sort_by(.key) | .[].value |= sort_by(.funnyUnit) | from_entries\" data.json",
     "prepare": "husky install"
   },
   "dependencies": {
