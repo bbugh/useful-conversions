@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import configureMeasurements, { allMeasures, type AllMeasuresUnits } from 'convert-units'
 import { computed, ref } from 'vue'
 import * as data from './data.json'
+import { groupBy, titleize } from './utils'
 
-import configureMeasurements, { allMeasures, type AllMeasuresUnits } from 'convert-units'
 const convert = configureMeasurements(allMeasures)
 
 const allRealUnits = convert().list()
+const groupedUnits = groupBy(allRealUnits, (unit) => unit.measure)
 
 type RealUnit = keyof typeof data
 
@@ -48,9 +50,15 @@ const funnyCount = computed(() =>
     <div style="display: flex; flex-direction: row">
       <input v-model="realNumber" type="number" />
       <select v-model="selectedRealUnit">
-        <option v-for="realUnit in allRealUnits" :key="realUnit.abbr" :value="realUnit.abbr">
-          {{ realUnit.plural }} ({{ realUnit.abbr }}) [{{ realUnit.measure }}]
-        </option>
+        <optgroup
+          v-for="(units, measure) in groupedUnits"
+          :key="measure"
+          :label="titleize(measure)"
+        >
+          <option v-for="realUnit in units" :key="realUnit.abbr" :value="realUnit.abbr">
+            {{ realUnit.plural }} ({{ realUnit.abbr }})
+          </option>
+        </optgroup>
       </select>
       TO
       <select v-model="selectedFunnyUnit">
