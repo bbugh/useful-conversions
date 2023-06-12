@@ -1,4 +1,56 @@
 {
+  "area": [
+    {
+      "funnyUnit": "Basketball Courts",
+      "realUnit": "m2",
+      "conversionFactor": 418
+    },
+    {
+      "funnyUnit": "Football Fields",
+      "realUnit": "m2",
+      "conversionFactor": 7140
+    },
+    {
+      "funnyUnit": "Golf Courses",
+      "realUnit": "ac",
+      "conversionFactor": 100
+    },
+    {
+      "funnyUnit": "Parking Spaces",
+      "realUnit": "m2",
+      "conversionFactor": 12.5
+    },
+    {
+      "funnyUnit": "Ping-Pong Tables",
+      "realUnit": "ft2",
+      "conversionFactor": 36
+    },
+    {
+      "funnyUnit": "Postage Stamps",
+      "realUnit": "mm2",
+      "conversionFactor": 645
+    },
+    {
+      "funnyUnit": "Soccer Fields",
+      "realUnit": "yd2",
+      "conversionFactor": 7140
+    },
+    {
+      "funnyUnit": "Swimming Pools",
+      "realUnit": "m2",
+      "conversionFactor": 250
+    },
+    {
+      "funnyUnit": "Tablecloths",
+      "realUnit": "in2",
+      "conversionFactor": 144
+    },
+    {
+      "funnyUnit": "Tennis Courts",
+      "realUnit": "ft2",
+      "conversionFactor": 261
+    }
+  ],
   "length": [
     {
       "conversionFactor": 0.1,
@@ -31,9 +83,9 @@
       "realUnit": "m"
     },
     {
-      "conversionFactor": 200,
+      "conversionFactor": 61,
       "funnyUnit": "Hockey Rinks",
-      "realUnit": "ft"
+      "realUnit": "m"
     },
     {
       "conversionFactor": 30,
@@ -49,6 +101,88 @@
       "conversionFactor": 4.45,
       "funnyUnit": "Paper Clips",
       "realUnit": "cm"
+    }
+  ],
+  "mass": [
+    {
+      "funnyUnit": "Ants",
+      "realUnit": "mg",
+      "conversionFactor": 3
+    },
+    {
+      "funnyUnit": "Chocolate Bars",
+      "realUnit": "oz",
+      "conversionFactor": 2.5
+    },
+    {
+      "funnyUnit": "Elephants",
+      "realUnit": "t",
+      "conversionFactor": 5
+    },
+    {
+      "funnyUnit": "Empire State Buildings",
+      "realUnit": "t",
+      "conversionFactor": 365000
+    },
+    {
+      "funnyUnit": "Feathers",
+      "realUnit": "g",
+      "conversionFactor": 0.0082
+    },
+    {
+      "funnyUnit": "Human Brains",
+      "realUnit": "lb",
+      "conversionFactor": 3
+    },
+    {
+      "funnyUnit": "Hummingbirds",
+      "realUnit": "g",
+      "conversionFactor": 3.5
+    },
+    {
+      "funnyUnit": "Jupiters",
+      "realUnit": "kg",
+      "conversionFactor": 1.898e+27
+    },
+    {
+      "funnyUnit": "Mount Everests",
+      "realUnit": "t",
+      "conversionFactor": 175000000000
+    },
+    {
+      "funnyUnit": "Paper Clips",
+      "realUnit": "mg",
+      "conversionFactor": 0.5
+    },
+    {
+      "funnyUnit": "Pencil Erasers",
+      "realUnit": "g",
+      "conversionFactor": 0.4
+    },
+    {
+      "funnyUnit": "Ping-Pong Balls",
+      "realUnit": "g",
+      "conversionFactor": 2.7
+    },
+    {
+      "funnyUnit": "School Buses",
+      "realUnit": "Tons",
+      "conversionFactor": 7.5
+    },
+    {
+      "funnyUnit": "Soccer Balls",
+      "realUnit": "g",
+      "conversionFactor": 450
+    },
+    {
+      "funnyUnit": "Sticks of Butter",
+      "realUnit": "oz",
+      "conversionFactor": 8
+    },
+    {
+      "funnyUnit": "Toothpicks",
+      "realUnit": "mg",
+      "conversionFactor": 100
     }
   ],
   "volume": [
