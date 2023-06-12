@@ -6,7 +6,10 @@ import { groupBy, titleize } from './utils'
 
 const convert = configureMeasurements(allMeasures)
 
-const allRealUnits = convert().list()
+const definedUnits = Object.keys(data)
+const allRealUnits = convert()
+  .list()
+  .filter((predicate) => definedUnits.includes(predicate.measure))
 const groupedUnits = groupBy(allRealUnits, (unit) => unit.measure)
 
 type RealUnit = keyof typeof data
