@@ -2,7 +2,7 @@
 import configureMeasurements, { allMeasures, type AllMeasuresUnits } from 'convert-units'
 import { computed, ref } from 'vue'
 import * as data from './data.json'
-import { groupBy, titleize } from './utils'
+import { formatNumber, groupBy, titleize } from './utils'
 
 const convert = configureMeasurements(allMeasures)
 
@@ -76,7 +76,8 @@ const funnyCount = computed(() =>
     </div>
 
     <div>
-      {{ realNumber }} {{ selectedRealUnit }} = about {{ funnyCount }} {{ selectedFunnyUnit }}
+      {{ realNumber }} {{ selectedRealUnit }} = about {{ formatNumber(funnyCount) }}
+      {{ selectedFunnyUnit }}
     </div>
   </main>
 </template>
