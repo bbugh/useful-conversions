@@ -1,54 +1,106 @@
 {
   "area": [
     {
+      "conversionFactor": 418,
       "funnyUnit": "Basketball Courts",
-      "realUnit": "m2",
-      "conversionFactor": 418
+      "realUnit": "m2"
     },
     {
+      "conversionFactor": 7140,
       "funnyUnit": "Football Fields",
-      "realUnit": "m2",
-      "conversionFactor": 7140
+      "realUnit": "m2"
     },
     {
+      "conversionFactor": 100,
       "funnyUnit": "Golf Courses",
-      "realUnit": "ac",
-      "conversionFactor": 100
+      "realUnit": "ac"
     },
     {
+      "conversionFactor": 12.5,
       "funnyUnit": "Parking Spaces",
-      "realUnit": "m2",
-      "conversionFactor": 12.5
+      "realUnit": "m2"
     },
     {
+      "conversionFactor": 36,
       "funnyUnit": "Ping-Pong Tables",
-      "realUnit": "ft2",
-      "conversionFactor": 36
+      "realUnit": "ft2"
     },
     {
+      "conversionFactor": 645,
       "funnyUnit": "Postage Stamps",
-      "realUnit": "mm2",
-      "conversionFactor": 645
+      "realUnit": "mm2"
     },
     {
+      "conversionFactor": 7140,
       "funnyUnit": "Soccer Fields",
-      "realUnit": "yd2",
-      "conversionFactor": 7140
+      "realUnit": "yd2"
     },
     {
+      "conversionFactor": 250,
       "funnyUnit": "Swimming Pools",
-      "realUnit": "m2",
-      "conversionFactor": 250
+      "realUnit": "m2"
     },
     {
+      "conversionFactor": 144,
       "funnyUnit": "Tablecloths",
-      "realUnit": "in2",
-      "conversionFactor": 144
+      "realUnit": "in2"
     },
     {
+      "conversionFactor": 261,
       "funnyUnit": "Tennis Courts",
-      "realUnit": "ft2",
-      "conversionFactor": 261
+      "realUnit": "ft2"
+    }
+  ],
+  "illuminance": [
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Candles at a Romantic Dinner",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 0.25,
+      "funnyUnit": "Full Moons",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 0.001,
+      "funnyUnit": "Glow-in-the-Dark Stars",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 0.0001,
+      "funnyUnit": "Glowing Fireflies",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 10000,
+      "funnyUnit": "Laser Beams",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 1000000,
+      "funnyUnit": "Lightning Flashes",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 100,
+      "funnyUnit": "Northern Lights",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 500,
+      "funnyUnit": "Office Fluorescent Lights",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 5000,
+      "funnyUnit": "Stage Spotlights",
+      "realUnit": "lux"
+    },
+    {
+      "conversionFactor": 10000000,
+      "funnyUnit": "Supernova Bursts",
+      "realUnit": "lux"
     }
   ],
   "length": [
@@ -105,84 +157,419 @@
   ],
   "mass": [
     {
+      "conversionFactor": 3,
       "funnyUnit": "Ants",
-      "realUnit": "mg",
-      "conversionFactor": 3
+      "realUnit": "mg"
     },
     {
+      "conversionFactor": 2.5,
       "funnyUnit": "Chocolate Bars",
-      "realUnit": "oz",
-      "conversionFactor": 2.5
+      "realUnit": "oz"
     },
     {
+      "conversionFactor": 5,
       "funnyUnit": "Elephants",
-      "realUnit": "t",
-      "conversionFactor": 5
+      "realUnit": "t"
     },
     {
+      "conversionFactor": 365000,
       "funnyUnit": "Empire State Buildings",
-      "realUnit": "t",
-      "conversionFactor": 365000
+      "realUnit": "t"
     },
     {
+      "conversionFactor": 0.0082,
       "funnyUnit": "Feathers",
-      "realUnit": "g",
-      "conversionFactor": 0.0082
+      "realUnit": "g"
     },
     {
+      "conversionFactor": 3,
       "funnyUnit": "Human Brains",
-      "realUnit": "lb",
-      "conversionFactor": 3
+      "realUnit": "lb"
     },
     {
+      "conversionFactor": 3.5,
       "funnyUnit": "Hummingbirds",
-      "realUnit": "g",
-      "conversionFactor": 3.5
+      "realUnit": "g"
     },
     {
+      "conversionFactor": 1.898e+27,
       "funnyUnit": "Jupiters",
-      "realUnit": "kg",
-      "conversionFactor": 1.898e+27
+      "realUnit": "kg"
     },
     {
+      "conversionFactor": 175000000000,
       "funnyUnit": "Mount Everests",
-      "realUnit": "t",
-      "conversionFactor": 175000000000
+      "realUnit": "t"
     },
     {
+      "conversionFactor": 0.5,
       "funnyUnit": "Paper Clips",
-      "realUnit": "mg",
-      "conversionFactor": 0.5
+      "realUnit": "mg"
     },
     {
+      "conversionFactor": 0.4,
       "funnyUnit": "Pencil Erasers",
-      "realUnit": "g",
-      "conversionFactor": 0.4
+      "realUnit": "g"
     },
     {
+      "conversionFactor": 2.7,
       "funnyUnit": "Ping-Pong Balls",
-      "realUnit": "g",
-      "conversionFactor": 2.7
+      "realUnit": "g"
     },
     {
+      "conversionFactor": 7.5,
       "funnyUnit": "School Buses",
-      "realUnit": "Tons",
-      "conversionFactor": 7.5
+      "realUnit": "Tons"
     },
     {
+      "conversionFactor": 450,
       "funnyUnit": "Soccer Balls",
-      "realUnit": "g",
-      "conversionFactor": 450
+      "realUnit": "g"
     },
     {
+      "conversionFactor": 8,
       "funnyUnit": "Sticks of Butter",
-      "realUnit": "oz",
-      "conversionFactor": 8
+      "realUnit": "oz"
     },
     {
+      "conversionFactor": 100,
       "funnyUnit": "Toothpicks",
-      "realUnit": "mg",
-      "conversionFactor": 100
+      "realUnit": "mg"
+    }
+  ],
+  "power": [
+    {
+      "conversionFactor": 0.01,
+      "funnyUnit": "Birthday Candles",
+      "realUnit": "Watts"
+    },
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Blasting Lasers",
+      "realUnit": "Gigawatts"
+    },
+    {
+      "conversionFactor": 0.8,
+      "funnyUnit": "Blenders",
+      "realUnit": "Megawatts"
+    },
+    {
+      "conversionFactor": 5,
+      "funnyUnit": "Fireworks",
+      "realUnit": "Megawatts"
+    },
+    {
+      "conversionFactor": 1.2,
+      "funnyUnit": "Hair Dryers",
+      "realUnit": "Megawatts"
+    },
+    {
+      "conversionFactor": 0.8,
+      "funnyUnit": "Hair Straighteners",
+      "realUnit": "Kilowatts"
+    },
+    {
+      "conversionFactor": 1.6,
+      "funnyUnit": "Jet Engines",
+      "realUnit": "Gigawatts"
+    },
+    {
+      "conversionFactor": 0.3,
+      "funnyUnit": "Lawnmowers",
+      "realUnit": "Megawatts"
+    },
+    {
+      "conversionFactor": 0.6,
+      "funnyUnit": "Popcorn Machines",
+      "realUnit": "Kilowatts"
+    },
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Rock Concerts",
+      "realUnit": "Megawatts"
+    },
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Rock Concerts",
+      "realUnit": "Megawatts"
+    },
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Thunderstorms",
+      "realUnit": "Gigawatts"
+    },
+    {
+      "conversionFactor": 1.5,
+      "funnyUnit": "Toaster Ovens",
+      "realUnit": "Kilowatts"
+    },
+    {
+      "conversionFactor": 0.001,
+      "funnyUnit": "Whispering",
+      "realUnit": "Milliwatts"
+    },
+    {
+      "conversionFactor": 0.3,
+      "funnyUnit": "Whistling Teapots",
+      "realUnit": "Kilowatts"
+    }
+  ],
+  "pressure": [
+    {
+      "conversionFactor": 100000,
+      "funnyUnit": "Airbag Deployments",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 50,
+      "funnyUnit": "Book Page Flips",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 200,
+      "funnyUnit": "Elevator Button Presses",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 1000000,
+      "funnyUnit": "Hammer Strikes",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 50,
+      "funnyUnit": "Keyboard Keys Typed",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 500,
+      "funnyUnit": "Microwave Popcorn Bursts",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 20,
+      "funnyUnit": "Smartphone Screen Taps",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 30000000,
+      "funnyUnit": "Space Shuttle Launches",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 100,
+      "funnyUnit": "Squeeze Bottle Dispenses",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 100,
+      "funnyUnit": "Toothpaste Tube Squeezes",
+      "realUnit": "Pa"
+    },
+    {
+      "conversionFactor": 2000000,
+      "funnyUnit": "Waterjet Cuttings",
+      "realUnit": "Pa"
+    }
+  ],
+  "speed": [
+    {
+      "conversionFactor": 0.2,
+      "funnyUnit": "Blinks of an Eye",
+      "realUnit": "m/s"
+    },
+    {
+      "conversionFactor": 389,
+      "funnyUnit": "Diving Peregrine Falcons",
+      "realUnit": "km/h"
+    },
+    {
+      "conversionFactor": 67000,
+      "funnyUnit": "Earth's orbital speed",
+      "realUnit": "mph"
+    },
+    {
+      "conversionFactor": 270000,
+      "funnyUnit": "Lightning Strikes",
+      "realUnit": "mph"
+    },
+    {
+      "conversionFactor": 4.8,
+      "funnyUnit": "Moving Sloths",
+      "realUnit": "km/h"
+    },
+    {
+      "conversionFactor": 3,
+      "funnyUnit": "Pumping Blood",
+      "realUnit": "ft/s"
+    },
+    {
+      "conversionFactor": 120,
+      "funnyUnit": "Racing Cheetahs",
+      "realUnit": "km/h"
+    },
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Raindrops",
+      "realUnit": "m/s"
+    },
+    {
+      "conversionFactor": 19,
+      "funnyUnit": "Skipping Rope Jumps",
+      "realUnit": "m/s"
+    },
+    {
+      "conversionFactor": 10,
+      "funnyUnit": "Sneezes",
+      "realUnit": "mph"
+    },
+    {
+      "conversionFactor": 1700,
+      "funnyUnit": "Speeding Bullets",
+      "realUnit": "mph"
+    }
+  ],
+  "temperature": [
+    {
+      "conversionFactor": 250,
+      "funnyUnit": "Barbecue Grill",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 150,
+      "funnyUnit": "Boiling Sulphur Springs",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 100,
+      "funnyUnit": "Boiling Water",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 400,
+      "funnyUnit": "Campfire",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 60,
+      "funnyUnit": "Cup of Coffee",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 60,
+      "funnyUnit": "Hair Dryer Heat",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 98.6,
+      "funnyUnit": "Human Body",
+      "realUnit": "F"
+    },
+    {
+      "conversionFactor": 1000,
+      "funnyUnit": "Molten Lava",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": -40,
+      "funnyUnit": "Mount Everest Summit",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": -30,
+      "funnyUnit": "North Pole",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 500,
+      "funnyUnit": "Nuclear Reactor Core",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": -8,
+      "funnyUnit": "Popsicle",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 4,
+      "funnyUnit": "Refrigerator",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 90,
+      "funnyUnit": "Sauna Room",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 15000000,
+      "funnyUnit": "Solar Core",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": 40,
+      "funnyUnit": "Tropical Heatwave",
+      "realUnit": "C"
+    },
+    {
+      "conversionFactor": -270,
+      "funnyUnit": "Vacuum of Space",
+      "realUnit": "C"
+    }
+  ],
+  "time": [
+    {
+      "conversionFactor": 300,
+      "funnyUnit": "Blinks of an Eye",
+      "realUnit": "ms"
+    },
+    {
+      "conversionFactor": 30,
+      "funnyUnit": "Cups of Coffee Brewed",
+      "realUnit": "s"
+    },
+    {
+      "conversionFactor": 30,
+      "funnyUnit": "Elevator Rides",
+      "realUnit": "s"
+    },
+    {
+      "conversionFactor": 3,
+      "funnyUnit": "Happy Hours",
+      "realUnit": "h"
+    },
+    {
+      "conversionFactor": 0.8,
+      "funnyUnit": "Hiccup",
+      "realUnit": "s"
+    },
+    {
+      "conversionFactor": 80,
+      "funnyUnit": "Human Lifetimes",
+      "realUnit": "Years"
+    },
+    {
+      "conversionFactor": 15,
+      "funnyUnit": "Nap",
+      "realUnit": "min"
+    },
+    {
+      "conversionFactor": 9,
+      "funnyUnit": "Trips to Mars",
+      "realUnit": "month"
+    },
+    {
+      "conversionFactor": 45,
+      "funnyUnit": "Washing Machine Cycles",
+      "realUnit": "min"
+    },
+    {
+      "conversionFactor": 48,
+      "funnyUnit": "Weekends",
+      "realUnit": "h"
+    },
+    {
+      "conversionFactor": 3,
+      "funnyUnit": "Yawns",
+      "realUnit": "s"
     }
   ],
   "volume": [
