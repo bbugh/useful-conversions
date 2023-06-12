@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  convert-units:
+    specifier: ^3.0.0-beta.2
+    version: 3.0.0-beta.2
   vue:
     specifier: ^3.3.4
     version: 3.3.4
@@ -23,8 +26,8 @@ devDependencies:
     specifier: ^21.1.1
     version: 21.1.1
   '@types/node':
-    specifier: ^18.16.17
-    version: 18.16.17
+    specifier: ^20.3.0
+    version: 20.3.0
   '@vitejs/plugin-vue':
     specifier: ^4.2.3
     version: 4.2.3(vite@4.3.9)(vue@3.3.4)
@@ -46,6 +49,9 @@ devDependencies:
   eslint-plugin-vue:
     specifier: ^9.11.0
     version: 9.11.0(eslint@8.39.0)
+  husky:
+    specifier: ^8.0.0
+    version: 8.0.0
   jsdom:
     specifier: ^22.1.0
     version: 22.1.0
@@ -60,7 +66,7 @@ devDependencies:
     version: 5.0.4
   vite:
     specifier: ^4.3.9
-    version: 4.3.9(@types/node@18.16.17)
+    version: 4.3.9(@types/node@20.3.0)
   vitest:
     specifier: ^0.32.0
     version: 0.32.0(jsdom@22.1.0)
@@ -422,6 +428,10 @@ packages:
     resolution: {integrity: sha512-QAkjjRA1N7gPJeAP4WLXZtYv6+eMXFNviqktCDt4GLcmCugMr5BcRHfkOjCQzvCsnMp+L79a54zBkbw356xv9Q==}
     dev: true
 
+  /@types/node@20.3.0:
+    resolution: {integrity: sha512-cumHmIAf6On83X7yP+LrsEyUOf/YlociZelmpRYaGFydoaPdxdt80MAbu6vWerQT2COCp2nPvHdsbD7tHn/YlQ==}
+    dev: true
+
   /@types/semver@7.5.0:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
     dev: true
@@ -567,7 +577,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.3.9(@types/node@18.16.17)
+      vite: 4.3.9(@types/node@20.3.0)
       vue: 3.3.4
     dev: true
 
@@ -1014,6 +1024,10 @@ packages:
       ini: 1.3.8
       proto-list: 1.2.4
     dev: true
+
+  /convert-units@3.0.0-beta.2:
+    resolution: {integrity: sha512-ib0pIcx+gMP/gpvMpZkol0MZr3mXTSLvt+BtspAB7Ff0QPo5VIJCcxmYd0GBnvV5i5B0lyySBZzkv/l3gWhx1A==}
+    dev: false
 
   /cross-spawn@6.0.5:
     resolution: {integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==}
@@ -1694,6 +1708,12 @@ packages:
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /husky@8.0.0:
+    resolution: {integrity: sha512-4qbE/5dzNDNxFEkX9MNRPKl5+omTXQzdILCUWiqG/lWIAioiM5vln265/l6I2Zx8gpW8l1ukZwGQeCFbBZ6+6w==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /iconv-lite@0.6.3:
@@ -2829,6 +2849,39 @@ packages:
         optional: true
     dependencies:
       '@types/node': 18.16.17
+      esbuild: 0.17.19
+      postcss: 8.4.24
+      rollup: 3.25.1
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: true
+
+  /vite@4.3.9(@types/node@20.3.0):
+    resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 20.3.0
       esbuild: 0.17.19
       postcss: 8.4.24
       rollup: 3.25.1

@@ -1,0 +1,106 @@
+{
+  "length": [
+    {
+      "conversionFactor": 0.1,
+      "funnyUnit": "Ants",
+      "realUnit": "mm"
+    },
+    {
+      "conversionFactor": 80,
+      "funnyUnit": "Blue Whales",
+      "realUnit": "ft"
+    },
+    {
+      "conversionFactor": 1,
+      "funnyUnit": "Bumblebees",
+      "realUnit": "cm"
+    },
+    {
+      "conversionFactor": 443,
+      "funnyUnit": "Empire State Buildings",
+      "realUnit": "m"
+    },
+    {
+      "conversionFactor": 100,
+      "funnyUnit": "Football Fields",
+      "realUnit": "yd"
+    },
+    {
+      "conversionFactor": 4,
+      "funnyUnit": "Giraffes",
+      "realUnit": "m"
+    },
+    {
+      "conversionFactor": 200,
+      "funnyUnit": "Hockey Rinks",
+      "realUnit": "ft"
+    },
+    {
+      "conversionFactor": 30,
+      "funnyUnit": "Hot Air Balloons",
+      "realUnit": "m"
+    },
+    {
+      "conversionFactor": 55.9,
+      "funnyUnit": "Leaning Towers of Pisa",
+      "realUnit": "m"
+    },
+    {
+      "conversionFactor": 4.45,
+      "funnyUnit": "Paper Clips",
+      "realUnit": "cm"
+    }
+  ],
+  "volume": [
+    {
+      "conversionFactor": 40,
+      "funnyUnit": "Bathtubs",
+      "realUnit": "gal"
+    },
+    {
+      "conversionFactor": 8,
+      "funnyUnit": "Coffee Cups",
+      "realUnit": "fl-oz"
+    },
+    {
+      "conversionFactor": 100,
+      "funnyUnit": "Fish Tanks",
+      "realUnit": "l"
+    },
+    {
+      "conversionFactor": 15,
+      "funnyUnit": "Gasoline Tanks",
+      "realUnit": "gal"
+    },
+    {
+      "conversionFactor": 55,
+      "funnyUnit": "Shipping Barrels",
+      "realUnit": "ft3"
+    },
+    {
+      "conversionFactor": 30,
+      "funnyUnit": "Shipping Containers",
+      "realUnit": "m3"
+    },
+    {
+      "conversionFactor": 12,
+      "funnyUnit": "Soda Cans",
+      "realUnit": "fl-oz"
+    },
+    {
+      "conversionFactor": 1000000,
+      "funnyUnit": "Swimming Pools",
+      "realUnit": "m3"
+    },
+    {
+      "conversionFactor": 500,
+      "funnyUnit": "Water Bottles",
+      "realUnit": "ml"
+    },
+    {
+      "conversionFactor": 0.75,
+      "funnyUnit": "Wine Bottles",
+      "realUnit": "l"
+    }
+  ]
+}
