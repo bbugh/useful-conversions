@@ -55,52 +55,52 @@
     {
       "conversionFactor": 10,
       "funnyUnit": "Candles at a Romantic Dinner",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 0.25,
       "funnyUnit": "Full Moons",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 0.001,
       "funnyUnit": "Glow-in-the-Dark Stars",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 0.0001,
       "funnyUnit": "Glowing Fireflies",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 10000,
       "funnyUnit": "Laser Beams",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 1000000,
       "funnyUnit": "Lightning Flashes",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 100,
       "funnyUnit": "Northern Lights",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 500,
       "funnyUnit": "Office Fluorescent Lights",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 5000,
       "funnyUnit": "Stage Spotlights",
-      "realUnit": "lux"
+      "realUnit": "lx"
     },
     {
       "conversionFactor": 10000000,
       "funnyUnit": "Supernova Bursts",
-      "realUnit": "lux"
+      "realUnit": "lx"
     }
   ],
   "length": [
