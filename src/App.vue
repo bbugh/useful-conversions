@@ -27,13 +27,18 @@ const selectedRealType = computed(() =>
 
 const selectedFunnyType = computed(() =>
   selectedRealType.value && selectedFunnyUnit.value
-    ? data[selectedRealType.value as RealUnit]?.find((unit) => unit.funnyUnit === selectedFunnyUnit.value)
+    ? data[selectedRealType.value as RealUnit]?.find(
+        (unit) => unit.funnyUnit === selectedFunnyUnit.value
+      )
     : undefined
 )
 
 const funnyCount = computed(() =>
   selectedRealUnit.value && selectedFunnyType.value
-    ? convert(realNumber.value).from(selectedRealUnit.value).to(selectedFunnyType.value.realUnit as AllMeasuresUnits) / selectedFunnyType.value.conversionFactor
+    ? convert(realNumber.value)
+        .from(selectedRealUnit.value)
+        .to(selectedFunnyType.value.realUnit as AllMeasuresUnits) /
+      selectedFunnyType.value.conversionFactor
     : 0
 )
 </script>
@@ -59,7 +64,9 @@ const funnyCount = computed(() =>
       </select>
     </div>
 
-    <div>{{ realNumber }} {{ selectedRealUnit }} = about {{ funnyCount }} {{ selectedFunnyUnit }}</div>
+    <div>
+      {{ realNumber }} {{ selectedRealUnit }} = about {{ funnyCount }} {{ selectedFunnyUnit }}
+    </div>
   </main>
 </template>
 

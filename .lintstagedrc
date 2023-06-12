@@ -1,0 +1,4 @@
+{
+  "*.{ts,tsx,vue}": ["eslint --fix", "prettier --write"],
+  "src/data.json": "yq -i -P -o json \"to_entries | sort_by(.key) | .[].value |= sort_by(.funnyUnit) | from_entries\""
+}
