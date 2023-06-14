@@ -14,13 +14,7 @@ const groupedUnits = groupBy(allRealUnits, (unit) => unit.measure)
 
 type RealUnit = keyof typeof data
 
-const funnyUnits = computed(() =>
-  selectedRealType.value
-    ? data[selectedRealType.value.measure as RealUnit] // this is a bad casting, it could be other types
-    : []
-)
-
-const realNumber = ref(150)
+const realNumber = ref()
 const selectedRealUnit = ref<AllMeasuresUnits>()
 const selectedFunnyUnit = ref<AllMeasuresUnits>()
 
@@ -38,6 +32,10 @@ const selectedRealLabel = computed(() =>
       ? selectedRealType.value.singular
       : selectedRealType.value.plural
     : undefined
+)
+
+const funnyUnits = computed(() =>
+  selectedRealType.value ? data[selectedRealType.value.measure as RealUnit] : []
 )
 
 const selectedFunnyType = computed(() =>
