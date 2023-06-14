@@ -64,12 +64,12 @@ const funnyQuantity = computed(() =>
         <div class="flex-row">
           <div>
             <label for="quantity">Quantity</label>
-            <input id="quantity" v-model="realNumber" type="number" class="numberInput" />
+            <input id="quantity" v-model="realNumber" type="number" class="w-100 quantity-input" />
           </div>
 
           <div>
-            <label for="realUnit">Useless Unit</label>
-            <select id="realUnit" v-model="selectedRealUnit">
+            <label for="realUnit">Real Unit</label>
+            <select id="realUnit" v-model="selectedRealUnit" class="w-100">
               <optgroup
                 v-for="(units, measure) in groupedUnits"
                 :key="measure"
@@ -109,15 +109,26 @@ const funnyQuantity = computed(() =>
             {{ selectedFunnyUnit }}
           </strong>
         </div>
-        <div v-else>ℹ️ Select a unit and quantity to see the useless measurement.</div>
+        <div v-else>ℹ️ Select a unit and quantity to see the useful measurement.</div>
       </form>
     </section>
   </main>
 </template>
 
 <style scoped>
-.numberInput {
-  max-width: 150px;
+.flex-row {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .quantity-input {
+    max-width: 150px;
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
 }
 
 .result {
@@ -125,11 +136,6 @@ const funnyQuantity = computed(() =>
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .w-100 {

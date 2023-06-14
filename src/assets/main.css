@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
 /* mvp.css doesn't style select box background color, making it inconsistent across browsers. */
 select {
   background-color: white;
