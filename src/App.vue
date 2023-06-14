@@ -24,6 +24,8 @@ const realNumber = ref(150)
 const selectedRealUnit = ref<AllMeasuresUnits>()
 const selectedFunnyUnit = ref<AllMeasuresUnits>()
 
+const hasRealValues = computed(() => realNumber.value && selectedRealUnit.value)
+
 const selectedRealType = computed(() =>
   selectedRealUnit.value
     ? allRealUnits.find((unit) => unit.abbr === selectedRealUnit.value)?.measure
@@ -49,64 +51,86 @@ const funnyCount = computed(() =>
 </script>
 
 <template>
-  <main>
-    <div style="display: flex; flex-direction: row">
-      <input v-model="realNumber" type="number" />
-      <select v-model="selectedRealUnit">
-        <optgroup
-          v-for="(units, measure) in groupedUnits"
-          :key="measure"
-          :label="titleize(measure)"
-        >
-          <option v-for="realUnit in units" :key="realUnit.abbr" :value="realUnit.abbr">
-            {{ realUnit.plural }} ({{ realUnit.abbr }})
-          </option>
-        </optgroup>
-      </select>
-      TO
-      <select v-model="selectedFunnyUnit">
-        <option
-          v-for="funnyUnit in funnyUnits"
-          :key="funnyUnit.funnyUnit"
-          :value="funnyUnit.funnyUnit"
-        >
-          {{ funnyUnit.funnyUnit }}
-        </option>
-      </select>
-    </div>
+  <main class="pt-0">
+    <section>
+      <form>
+        <h2>Convert</h2>
+        <div class="flex-row">
+          <div>
+            <label for="quantity">Quantity</label>
+            <input id="quantity" v-model="realNumber" type="number" class="numberInput" />
+          </div>
 
-    <div>
-      {{ realNumber }} {{ selectedRealUnit }} = about {{ formatNumber(funnyCount) }}
-      {{ selectedFunnyUnit }}
-    </div>
+          <div>
+            <label for="realUnit">Useless Unit</label>
+            <select id="realUnit" v-model="selectedRealUnit">
+              <optgroup
+                v-for="(units, measure) in groupedUnits"
+                :key="measure"
+                :label="titleize(measure)"
+              >
+                <option v-for="realUnit in units" :key="realUnit.abbr" :value="realUnit.abbr">
+                  {{ realUnit.plural }} ({{ realUnit.abbr }})
+                </option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+        <h2>To</h2>
+        <div>
+          <label for="funnyUnit">Useful Unit</label>
+          <select
+            id="funnyUnit"
+            v-model="selectedFunnyUnit"
+            :disabled="!hasRealValues"
+            class="w-100"
+          >
+            <option
+              v-for="funnyUnit in funnyUnits"
+              :key="funnyUnit.funnyUnit"
+              :value="funnyUnit.funnyUnit"
+            >
+              {{ funnyUnit.funnyUnit }}
+            </option>
+          </select>
+        </div>
+
+        <div v-if="realNumber && selectedRealUnit && selectedFunnyUnit" class="result">
+          <strong> {{ realNumber }} {{ selectedRealUnit }} </strong>
+          is about
+          <strong>
+            {{ formatNumber(funnyCount) }}
+            {{ selectedFunnyUnit }}
+          </strong>
+        </div>
+        <div v-else>Select a unit and quantity to see the useless measurement.</div>
+      </form>
+    </section>
   </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.numberInput {
+  max-width: 150px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.result {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.w-100 {
+  width: 100%;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.pt-0 {
+  padding-top: 0;
 }
 </style>
