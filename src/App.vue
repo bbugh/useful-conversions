@@ -16,7 +16,7 @@ type RealUnit = keyof typeof data
 
 const funnyUnits = computed(() =>
   selectedRealType.value
-    ? data[selectedRealType.value as RealUnit] // this is a bad casting, it could be other types
+    ? data[selectedRealType.value.measure as RealUnit] // this is a bad casting, it could be other types
     : []
 )
 
@@ -28,19 +28,27 @@ const hasRealValues = computed(() => realNumber.value && selectedRealUnit.value)
 
 const selectedRealType = computed(() =>
   selectedRealUnit.value
-    ? allRealUnits.find((unit) => unit.abbr === selectedRealUnit.value)?.measure
+    ? allRealUnits.find((unit) => unit.abbr === selectedRealUnit.value)
+    : undefined
+)
+
+const selectedRealLabel = computed(() =>
+  selectedRealType.value
+    ? realNumber.value === 1
+      ? selectedRealType.value.singular
+      : selectedRealType.value.plural
     : undefined
 )
 
 const selectedFunnyType = computed(() =>
   selectedRealType.value && selectedFunnyUnit.value
-    ? data[selectedRealType.value as RealUnit]?.find(
+    ? data[selectedRealType.value.measure as RealUnit]?.find(
         (unit) => unit.funnyUnit === selectedFunnyUnit.value
       )
     : undefined
 )
 
-const funnyCount = computed(() =>
+const funnyQuantity = computed(() =>
   selectedRealUnit.value && selectedFunnyType.value
     ? convert(realNumber.value)
         .from(selectedRealUnit.value)
@@ -96,14 +104,14 @@ const funnyCount = computed(() =>
         </div>
 
         <div v-if="realNumber && selectedRealUnit && selectedFunnyUnit" class="result">
-          <strong> {{ realNumber }} {{ selectedRealUnit }} </strong>
-          is about
+          <strong> {{ realNumber }} {{ selectedRealLabel }} </strong>
+          is equivalent to
           <strong>
-            {{ formatNumber(funnyCount) }}
+            {{ formatNumber(funnyQuantity) }}
             {{ selectedFunnyUnit }}
           </strong>
         </div>
-        <div v-else>Select a unit and quantity to see the useless measurement.</div>
+        <div v-else>ℹ️ Select a unit and quantity to see the useless measurement.</div>
       </form>
     </section>
   </main>
